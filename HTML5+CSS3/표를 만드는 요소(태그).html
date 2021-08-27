@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표를 만드는 요소(태그)</title>
+    <style>
+        td,table{
+            border: 2px solid #000;
+        }
+        td,th{width: 100px;}
+    </style>
+</head>
+<body>
+    <h1>표관련 태그</h1>
+        <table>
+            <caption>table의 제목(center)</caption>
+            <tr>
+                <th>table 1</th>
+                <th>table 2</th>
+            </tr>
+            <tr>
+                <td>table 3</td>
+                <td>table 4</td>
+            </tr>
+            <tr>
+                <td>table 5</td>
+                <td>table 6</td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <table>
+            <caption>table의 병합</caption>
+            <tr>
+                <td colspan="3">01</td>
+                <!-- <td>02</td>
+                <td>03</td> -->
+                <td rowspan="3">04</td>
+            </tr>
+            <tr>
+                <td rowspan="2">05</td>
+                <td>06</td>
+                <td>07</td>
+                <!-- <td>08</td> -->
+            </tr>
+            <tr>
+                <!-- 
+                    
+                    <td>09</td> -->
+                <td>10</td>
+                <td>11</td>
+                <!-- <td>12</td> -->
+            </tr>
+        </table>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <table>
+            <caption>표의 구조</caption>
+            <thead>
+                <tr>
+                    <th>table 머리</th>
+                     <th>table 머리</th>
+                </tr>
+        </thead>
+            
+        <tbody>
+            <tr>
+                <td>table 내용</td>
+                <td>table 내용</td>
+            </tr>
+        </tbody>
+           
+        <tfoot>
+              <tr>
+                <td>table 하단</td>
+                <td>table 하단</td>
+            </tr>
+        </tfoot>
+          
+        </table>
+</body>
+</html>

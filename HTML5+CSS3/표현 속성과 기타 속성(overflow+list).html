@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표현 속성과 기타 속성(overflow+list)</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        body{
+            background-color: burlywood;
+            width: 2000px;
+            height: 2000px;
+            overflow-x: hidden ;
+            overflow-y: hidden ;
+        }
+
+
+        .contents1{
+            width: 200px;
+            height: 210px;
+            border: 2px solid #000;
+            float: left;
+            margin: 10px;
+        }
+        .contents2{
+            width: 200px;
+            height: 210px;
+            border: 2px solid #000;
+            float: left;
+            margin: 10px;
+        }
+        .contents3{
+            width: 200px;
+            /* height: 210px; */
+            border: 2px solid #000;
+            float: left;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .contents4{
+            width: 200px;
+            height: 210px;
+            border: 2px solid #000;
+            float: left;
+            margin: 10px;
+            /* overflow: hidden; */
+            overflow:scroll;s
+        }
+    
+
+        li{
+            list-style: none;
+            list-style-type: decimal-leading-zero;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="contents1">
+        <h4>콘텐츠양이 일정</h4>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        </p>
+
+    </div>
+
+    <div class="contents2">
+        <h4>콘텐츠양이 많거나 유동</h4>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        </p>
+
+    </div>
+
+    <div class="contents3">
+        <h4>콘텐츠양에 따라 늘어남</h4>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        </p>
+
+    </div>
+
+    <div class="contents4">
+        <h4>박스높이에 따라 콘텐츠가 안보임</h4>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        </p>
+
+    </div>
+
+    <br>
+    <br>
+
+         <ul>
+           <li>회사소개</li>
+          <li>생산설비</li>
+          <li>제품소개</li>
+          <li>온라인문의</li>
+          <li>커뮤니티</li>
+     </ul>
+     <br>
+    <br>
+
+    <ol>
+        <li>회사소개</li>
+          <li>생산설비</li>
+          <li>제품소개</li>
+          <li>온라인문의</li>
+          <li>커뮤니티</li>
+    </ol>
+    <br>
+    <br>
+
+    <dl>
+        <dt>정의 목록 타이틀</dt>
+        <dd>목록의 내용</dd>
+    </dl>
+        
+</body>
+</html>

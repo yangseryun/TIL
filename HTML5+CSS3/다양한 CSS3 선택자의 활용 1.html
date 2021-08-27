@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 CSS3 선택자의 활용</title>
+    <style>
+        div>h1{
+              background-color: cornflowerblue;
+        }
+        div span{
+            background-color: crimson;
+        }
+        div h2{
+            border: 3px solid #000;
+        }
+        div>span{
+            color: darkgreen;
+        }
+        .box span{
+            font-size: 40px;
+        }
+
+        h1+h2{
+           color: blue; 
+        }
+        h1~h2{
+            background-color: burlywood;
+        }
+        h1:hover{
+            background-color: chocolate;
+        }
+        h2:active{
+            color:darkturquoise;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>제목1</h1>
+        <h2>제목2</h2>
+        <div class="box">
+            <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li><span>menu2</span></li>
+            </ul>
+     </div>
+        <h2>제목3</h2>
+        <span>span</span>
+    </div>
+<br>
+<br>
+<br>
+
+<h1>제목 11</h1>
+<h2>제목 22</h2>
+<h2>제목 22</h2>
+<h2>제목 22</h2>
+<h2>제목 22</h2>
+<h2>제목 22</h2>
+</body>
+</html>

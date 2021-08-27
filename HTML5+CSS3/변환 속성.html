@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변환 속성</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        section{
+            width: 700px;
+            overflow: hidden;
+            padding: 30px;
+            border: 3px solid #000;
+            margin: 150px auto;
+        }
+
+        .line:nth-child(1){
+            background-color: darkkhaki;
+            transition-timing-function: linear;
+           
+        }
+        .line:nth-child(2){
+            background-color:darkorange;
+            
+            transition-timing-function: linear;
+        }
+        .line:nth-child(3){
+            background-color: darkseagreen;
+           
+            transition-timing-function:ease-out;
+        }
+        .line:nth-child(4){
+            background-color: forestgreen;
+            
+            transition-timing-function:ease-in-out
+        }
+        .line:nth-child(5){
+            background-color: dodgerblue;
+           
+            transition-timing-function:ease-in;
+        }
+
+        section:hover .line{
+            width: 700px;
+          
+        }
+        .line{
+            width: 30px;
+            height: 30px;
+            background-color: cyan;
+            margin: 10px 0px;
+            transition-duration: 0.5s;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: crimson;
+        }
+        div:hover{
+            width: 400px;
+            height: 400px;
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    
+    <br> <br> <br> <br> <br> <br>
+    <section>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표를 만드는 요소(스타일)</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        table{
+            border: 2px solid #000;
+            margin: 100px;
+            border-collapse: collapse;
+            border-spacing: 20px 40px;
+            empty-cells: show;
+
+        }
+        td{
+            border: 2px solid #000;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        table{
+            border-collapse: collapse;
+            border-top: 2px solid #f0f;
+            margin: 40px auto;
+            width: 300px;
+        }
+
+        td{
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        .bl_n{
+            border-left: none;
+        }
+        .br_n{
+            border-right: none;
+        }
+        th{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<table>
+    <tr>
+        <th class="bl_n">tit1</th>
+        <th>tit2</th>
+        <th class="br_n">tit3</th>
+    </tr>
+    <tr>
+        <td class="bl_n">01</td>
+        <td>02</td>
+        <td class="br_n">03</td>
+    </tr>
+    <tr>
+        <td class="bl_n">04</td>
+        <td>05</td>
+        <td class="br_n">06</td>
+    </tr>
+</table>
+</body>
+</html>

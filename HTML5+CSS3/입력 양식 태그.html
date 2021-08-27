@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 양식 태그</title>
+    <style>
+        input[type="text"]{
+            background-color: cornsilk;
+            border: 3px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>개인정보작성</legend>
+            <label>id</label>
+            <input type="text" name="id" />
+        </fieldset>
+
+        <input type="password" name= "pw" />
+        <br><br>
+
+        <input type="tel" placeholder="010-0000-0000" name="tel"/>
+        <br><br>
+
+        <input type="checkbox" name="ch"/>
+        <input type="radio" name="r"/>
+        <br><br>
+
+        <input type="submit" value="확인하기" name="btn"/>
+        <input type="reset" value="취소하기" name="btn"/>
+        <br><br>
+
+        <button type="button">버튼</button>
+        <br><br>
+
+        <select>
+            <option>항목1</option>
+            <option>항목2</option>
+            <option>항목3</option>
+            <option>항목4</option>
+            <option>항목5</option>
+            <option>항목6</option>
+        </select>
+        <br><br>
+
+        <textarea></textarea>
+    </form>
+</body>
+</html>

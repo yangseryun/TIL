@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 CSS3 선택자의 활용 3</title>
+    <style>
+        input[type="text"]{
+            background-color: cornsilk;
+        }
+        img[src$="jpg"]{
+            border: 3px solid #ff0;
+        }
+        img[src$="png"]{
+            border: 3px solid #f00;
+        }
+        img[src$="gif"]{
+            border: 3px solid #00f;
+        }
+
+        div[class*="box"]{
+            background-color: cyan;
+        }
+
+  input:focus{
+      background-color: darkgoldenrod;
+  }
+
+  div{
+      width: 650px;
+      height: 300px;
+      background-color: darkmagenta;
+      overflow: hidden;
+  }
+
+  input[type="checkbox"]:checked+div{
+      background-color: darkseagreen;
+  }
+
+  p::first-letter{
+      font-size: 20px;
+      font-weight: 900;
+      color:deepskyblue;
+
+  }
+
+  p::first-line{
+      background-color: goldenrod;
+  }
+
+  h1::before{
+      content: ' 앞쪽 >';
+        font-size: 30px;
+        font-weight: 900;
+        color:indianred;
+  }
+
+  p::after{
+      content: '<뒤쪽';
+      font-size: 30px;
+      font-weight: 900;
+        color:indianred;
+
+  }
+    </style>
+</head>
+<body>
+    <input type="text" />
+    <div class="box">
+        <img src="camera01.jpg">
+        <img src="camera02.jpg">
+        <img src="in/camera03.jpg">
+    </div>
+<br>
+<br>
+<br>
+
+<input type="senten" />
+<br>
+<br>
+<br>
+<input type="checkbox" />
+
+<div>
+    <h1>Lorem Ipsum</h1>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries,
+        but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s
+        with the release of Letraset sheets containing Lorem Ipsum passages,
+        and more recently with desktop publishing software like Aldus PageMaker
+        including versions of Lorem Ipsum.
+    </p>
+</div>
+</body>
+</html>

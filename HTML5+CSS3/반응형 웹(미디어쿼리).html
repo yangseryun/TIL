@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹(미디어쿼리)</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+         }
+        .test{
+            max-width: 700px;
+            min-width: 700px;
+            width: 700px;
+            height: 700px;
+            background-color: blueviolet;
+            font-size: 30px;
+            color: #fff;
+        }
+        body{
+            background-color: chartreuse;
+        }
+
+        @media screen and (min-width:1024px){
+            body{
+                background-color: cornflowerblue;
+            }
+        }
+
+        @media screen and (max-width:1023px){
+            body{
+                background-color: darkgrey;
+            }
+        }
+
+        @media  screen and (min-width:480px) and (max-width:767px) {
+            body{
+                background-color: fuchsia;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="test">
+        뷰포트뷰포트뷰포트뷰포트뷰포트뷰포트뷰포트<br>
+        미디어쿼리미디어쿼리미디어쿼리미디어쿼리
+    </div>
+</body>
+</html>

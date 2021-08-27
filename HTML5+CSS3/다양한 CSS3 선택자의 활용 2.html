@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 CSS3 선택자의 활용 2</title>
+    <style>
+        ul{
+            overflow: hidden;
+        }
+        li{
+            list-style: none;
+            float: left;
+            padding: 15px;
+        }
+
+        li:first-child{
+            background-color: brown;
+        }
+
+        li:last-child{
+            background-color: crimson;
+        }
+
+        li:nth-child(2n+1){
+            background-color: cyan;
+            color: darkmagenta;
+        }
+
+        li:nth-child(2n){
+            background-color: hotpink;
+            color: seagreen;
+        }
+
+        li:nth-child(3){
+            border: 3px solid #000;
+        }
+
+        li:nth-child(5) a{
+            color:tomato;
+        }
+
+        .box:first-child{
+            background-color: thistle;
+        }
+
+
+        h1:first-of-type{
+            background-color: yellow;
+        }
+
+        h2:last-of-type{
+            color: slateblue;
+        }
+        h3:nth-of-type(2){
+            border: 2px solid #000;
+        }
+
+        li:nth-child(5):hover{
+            background-color: slateblue;
+
+        }
+        li:nth-child(5):hover a{
+            color:snow;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="box">menu-1</li>
+        <li class="box">menu-2</li>
+        <li class="box">menu-3</li>
+        <li class="box">menu-4</li>
+        <li class="box"><a href="#">menu-5</a></li>
+        <li class="box"></li>menu-6</li>
+    </ul>
+
+    <div>
+        <h1>header1</h1>
+        <h2>header2</h2>
+        <h3>header3</h3>
+        <h3>header3</h3>
+        <h2>header2</h2>
+        <h1>header1</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹폰트</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family:'NANUM';
+            font-weight: 500;
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff'),
+            'https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/KoreanFrenchTypewriter.woff') format('woff');
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-size: 14px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .test1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p{
+            margin: 40px 0px;
+        }
+        .test2{
+            font-family: 'Black Han Sans', sans-serif;
+        }
+        .test3{
+            font-family: "NANUM";
+        }
+    </style>
+</head>
+<body>
+    <h1>웹폰트</h1>
+    <p class ="test1">
+       1 웹페이지내 연결
+    </p>
+
+    <p class="test2">
+        2 링크 연결
+    </p>
+
+    <p class="test3">
+        3 폰트 선언
+    </p>
+</body>
+</html>

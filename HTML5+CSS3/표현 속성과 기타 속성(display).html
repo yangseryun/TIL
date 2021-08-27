@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표현 속성과 기타 속성(display)</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div{
+            background-color: cadetblue;
+            width: 300px;
+            height: 100px;
+            margin: 50px;
+
+            display:inline;
+        }
+        span{
+            background-color: coral;
+            width: 300px;
+            height: 100px;
+            margin: 50px;
+
+            display: block;
+        }
+
+        span{
+            border: 4px solid #000;
+            display: inline-block;
+            width: 200px;
+        }
+
+        body{
+            text-align: center;
+        }
+
+        .bk{
+            display: block;
+            width: 600px;
+            margin: 0 auto;
+            /* display: none; - 안모이게 처리 */
+        }
+        
+        div{
+            background-color: darkkhaki;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>block01</div>
+    <div>block02</div>
+    <div>block03</div>
+
+    <span>inline01</span>
+    <span>inline02</span>
+    <span>inline03</span>
+<br>
+<br>
+<br>
+<div>
+    <span>span01</span>
+    <span>span02</span>
+    <span>span03</span>
+</div>
+
+<br>
+<span class="bk">span04</span>
+<span class="bk">span05</span>
+<span class="bk">span06</span>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치 속성 1</title>
+    <style>
+     *{
+         padding: 0;
+         margin: 0;
+     }
+     .p1{
+         width: 300px;
+         height: 300px;
+         background-color: blueviolet;
+         text-align: center;
+         line-height: 300px;
+         font-size: 30px;
+         position: fixed;
+
+         top: 50px;
+         left: 50px;
+     }
+     body{
+         height: 3000px;
+         background-color: cornsilk;
+     }
+     .pbox{
+        width: 200px;
+        height: 200px;
+        background-color: darkblue;
+        line-height: 200px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+     }
+   
+     .pbox:nth-child(2){
+         background-color: darkkhaki;
+         position: absolute;
+         top: 60px;
+        left: 60px;
+     }
+     .pbox:nth-child(3)
+{
+    background-color: darksalmon;
+    position: absolute;
+    top: 90px;
+        left: 90px;
+}       
+#position{
+    width: 400px;
+    height: 200px;
+    background-color: deeppink;
+    position: relative;
+}
+.menu{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: dimgray;
+}
+ }
+    </style>
+</head>
+<body>
+    <h1>position</h1>
+    <p> : 어떻게 위치할지 결정하는 속성</p>
+
+    <div class="p1">position</div>
+    <br>
+    <br>
+    <br>
+    
+<div class="menu"></div>
+
+<div id="postion">
+    <div class="pbox">box1</div>
+    <div class="pbox">box2</div>
+    <div class="pbox">box3</div>
+</div>
+    
+</body>
+</html>
