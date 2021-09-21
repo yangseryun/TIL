@@ -736,6 +736,3 @@ min-width: -> 최소 유지하고자 하는 넓이값 (100%~)<br>
 meta name="viewport" content="width=device-width, initial-scale=1.0"<br>
 	* 웹페이지의 너비를 기기의 화면 폭으로 설정<br>
 	* 처음 페이지에서 원래 크기를 사용하도록 설정<br>
-	
-<br>
-<br>
